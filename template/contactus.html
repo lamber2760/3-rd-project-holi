@@ -1,0 +1,39 @@
+{% extends "nav.html" %}
+{% block we %}
+
+<div style="border: 4px double yellow;
+border-radius: 30px;
+ padding: 100px;
+ padding-top: 9px;
+ padding-bottom: 9px; background-color: aqua;"  style="padding: 252px;">
+  <h1 style=" text-align: center;">CREATE FORM</h1>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">FULL_NAME</label>
+    <input type="text" name="fname" class="form-control"
+      id="exampleFormControlInput1" placeholder="enter your full name" required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">EMAIL_ADDEESS</label>
+    <input type="email" name="email" class="form-control"
+      id="exampleFormControlInput1" placeholder="enter your email arrdess" required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">PHONE_NUMBER</label>
+    <input type="text" name="phonenumber" class="form-control"
+      id="exampleFormControlInput1" placeholder="enter your phone number" required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">MESSAGE</label>
+    <textarea  name="msg"  class="form-control" id="exampleFormControlTextarea1" placeholder="enter your message"
+      rows="3" required></textarea>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">UPLOAD_IMAGE</label>
+        <input type="file" name="img" class="form-control"
+          id="exampleFormControlInput1" placeholder="ENTER YOUR IMAGE" required>
+      </div>
+  </div>
+  <div style=" text-align: center;">
+    <button type="submit"> DONE</button>
+  </div>
+</div>
+{% endblock we %}
