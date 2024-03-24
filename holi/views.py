@@ -7,8 +7,7 @@ def homepage(request):
     return render(request,"home.html")
 def aboutus(request):
     return render(request,"aboutus.html")
-def contactusx(request):
-    return render(request,"contactus.html")
+def formx(request):
+    return render(request,"form.html")
 def check_form(request):
     return render(request,"check_form.html")
-
