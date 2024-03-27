@@ -7,5 +7,6 @@ urlpatterns = [
     path("form",views.formx, name="formx"),
     path("check_form",views.check_form, name="check_form"),
 
-    # path("mydata",views.savethis, name="savethis")
+    path("mydata",views.savethis, name="savethis")
+    
 ]    

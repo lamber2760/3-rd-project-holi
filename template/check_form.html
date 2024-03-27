@@ -1,4 +1,30 @@
 {% extends "nav.html" %}
 {% block we %}
+<div style="padding: 16px; " class="row">
+  <h5 style="text-align: center;">MY RECORD</h5>
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div style="background-color: cadetblue;" class="card">
+        {%for data in records %}
+
+          <h5 class="card-title">FULL NAME :<span>{{data.username}}</span></h5>
+          <h5 class="card-title">EMAIL :<span>{{data.email}}</span></h5>
+          <h5 class="card-title">PHONE_NUMBER :<span>{{data.phonemunber}}</span></h5>
+          <h5 class="text card">MESSAGE :<span>{{data.message}}</span></h5>
+
+          <div style="display: flex;justify-content: space-evenly;">
+
+            <form action="" method="POST">
+              <button type="button" class="btn btn-success">UPDATE</button>
+            </form>
+
+            <form action="" method="POST">
+             <button type="button" class="btn btn-danger">DELETE</button>
+            </form>
+
+          </div>
+
+      </div>
+    </div>
+  </div>
 
 {% endblock we %}

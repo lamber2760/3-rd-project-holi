@@ -3,11 +3,12 @@
 
 <div style="border: 4px double yellow;
 border-radius: 30px;
- padding: 100px;
+ padding: 190px;
  padding-top: 9px;
  padding-bottom: 9px; background-color: aqua;"  style="padding: 252px;">
   <h1 style=" text-align: center;">CREATE FORM</h1>
   <form action="mydata" method="POST">
+    {% csrf_token %}
   <div class="mb-3">
     <label  for="exampleFormControlInput1" class="form-label">FULL_NAME</label>
     <input type="text" name="fname" class="form-control"
